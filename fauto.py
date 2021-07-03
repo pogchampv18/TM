@@ -28,8 +28,8 @@ option = webdriver.FirefoxOptions()
 #Removes navigator.webdriver flag
 
 # For older FirefoxDriver under version 79.0.3945.16
-option.add_experimental_option("excludeSwitches", ["enable-automation"])
-option.add_experimental_option('useAutomationExtension', False)
+#option.add_experimental_option("excludeSwitches", ["enable-automation"])
+#option.add_experimental_option('useAutomationExtension', False)
 option.add_argument('--disable-dev-shm-usage')
 option.add_argument('--no-sandbox')
 
